@@ -1,0 +1,363 @@
+/* ======================= */
+/*        Fonts            */
+/* ======================= */
+@font-face {
+    font-family: 'GT Haptik';
+    src: url('fonts/gt-haptik-regular-webfont.woff2') format('woff2'),
+         url('fonts/gt-haptik-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Haptik';
+    src: url('fonts/gt-haptik-light-webfont.woff2') format('woff2'),
+         url('fonts/gt-haptik-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Haptik';
+    src: url('fonts/gt-haptik-bold-webfont.woff2') format('woff2'),
+         url('fonts/gt-haptik-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ======================= */
+/*     Global Styles       */
+/* ======================= */
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+strong {
+    font-weight: 490;
+}
+
+/* ======================= */
+/*      Typography         */
+/* ======================= */
+.main_title {
+    font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 350;
+    letter-spacing: -2px;
+    color: #222222;
+    background-color: transparent; /* remove dark box */
+    padding-top: 25vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.project_section {
+    margin-top: 7vh;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project_section:hover {
+
+    /* scale & color */
+    transform: scale(1.05);
+    background-color: #E5E5E5;
+
+}
+
+.second_title {
+    font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 450;
+    letter-spacing: -1.7px;
+    color: #227DFF;
+    background-color: #E2E2E2; /* remove dark box */
+    border-bottom: 3px solid #227DFF;
+    padding-bottom: 1.5vh; 
+    padding-top: 1vh;   
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.bio_title {
+    font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 350;
+    letter-spacing: 0.4px;
+    color: #222222;
+    background-color: transparent; /* remove dark box */
+    padding-bottom: 2vh;    
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
+    text-align: left;
+    margin-top: 8vw;
+    max-width: 40vw;
+    margin-left: 0vw;
+    margin-right: 20vw;
+    position: relative;
+    z-index: 10;
+}
+
+.bio-wrapper {
+    max-width: 900px;
+    margin-left: 10vw;
+    margin-right: auto;
+    margin-top: 10vw;
+}
+
+.main_paragraph {
+    font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 350;
+    letter-spacing: 0.4px;
+    color: #222222;
+    background-color: transparent; /* remove dark box */
+    padding-bottom: 2vh;    
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* ======================= */
+/*       Components        */
+/* ======================= */
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.top-right-buttons a {
+    background-color: transparent;
+    border: none;
+    padding: 8px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #222222;
+    text-decoration: none;
+}
+
+.top-right-buttons a:hover {
+    background-color: #e9dec7;
+    border-radius: 10%;
+}
+
+.signature-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 120px; /* adjust size */
+    height: auto;
+    z-index: 1000; /* makes sure it stays on top */
+}
+
+.signature-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* ======================= */
+/*         Images          */
+/* ======================= */
+.blossom-left {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 48vw;
+    height: 35vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url('images/blo_left_noback.png');
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none; /* allow clicks to go through */
+}
+
+.blossom-right {
+    position: absolute;
+    top: 25vh;
+    right: 0;
+    width: 48vw;
+    height: 35vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url('images/blo_right_noback.png');
+    opacity: 1; 
+    z-index: 0;      /* soften for subtlety */
+    pointer-events: none; /* allow clicks to go through */
+}
+
+.transition-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 6vh auto 4vh auto; /* vertical spacing + centering */
+}
+
+.my_face {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    left: 60vw;
+    width: 29vw;
+    max-width: 900px;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url('images/me_minimal.png');
+}
+
+/* ======================= */
+/*     Media Queries       */
+/* ======================= */
+@media (max-width: 600px) {
+    .main_title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .blossom-left, .blossom-right {
+        display: none;
+    }
+    .main_title {
+        font-size: 1.5rem;
+        padding-top: 15vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .bio-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5vw;
+        margin-left: 0;
+    }
+
+    .my_face {
+        display: block;
+        width: 60vw;
+        margin-top: 10vw;
+        margin-left: 20vw;
+        max-width: 700px;
+        height: auto;
+        position: static;
+        align-self: center;
+    }
+
+    .main_paragraph {
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+ 
+    }
+
+    .bio_title {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* ======================= */
+/*      Footer Layout      */
+/* ======================= */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5vh 10vw;
+    font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    flex-wrap: wrap;
+    gap: 4vw;
+    width: 100vw;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.footer-left {
+    max-width: 50%;
+}
+
+.footer-left h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer-left p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    gap: 4vw;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #000;
+    line-height: 1.8;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-left .copyright {
+    font-size: 0.8rem;
+    margin-top: 2vh;
+    color: #666;
+}

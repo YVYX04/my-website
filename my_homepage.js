@@ -1,0 +1,1 @@
+// This is the necessary javascript code for my homepage
